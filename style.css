@@ -1,0 +1,15 @@
+* {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+}
+body {
+    margin: 0 auto;
+}
+.wrapper {
+    background-color: #FBF8EC;
+    padding: 0 116px 116px 70px;
+    min-height: 100vh;
+}
+.main {
+}
