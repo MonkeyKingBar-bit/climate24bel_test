@@ -13,58 +13,77 @@
     <main class="main">
         <section class="main-item card-products">
             <div class="card-products__items">
-                <h2 class="card-products text">Акции</h2>
+                <h2 class="card-products__title">Акции</h2>
                 <button class="card-products__btn">
-                    Все акции
+                    <p class="btn-text">Все акции</p>
                     <img src="./assets/icons/right-arrow.png" alt="right-arrow">
                 </button>
             </div>
 
             <div class="content">
                 <div class="items">
-                    <div class="item">
+                    <div class="item" data-id="01">
                         <img src="./assets/stock/pancakes.png" alt="pancakes">
-                        <img src="./assets/stock/price.png" alt="price">
-                        <p class="item-name">Г/Ц Блинчики с мясом вес, Россия</p>
-                        <img src="./assets/icons/rating.png" alt="rating">
-                        <button>В корзину</button>
+                        <div class="item-content">
+                            <img src="./assets/stock/price.png" alt="price">
+                            <p class="item-name">Г/Ц Блинчики с мясом вес, Россия</p>
+                            <img src="./assets/icons/rating.png" alt="rating">
+                            <button data-cart type="button" class="item-btn">В корзину</button>
+                        </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item" data-id="02">
                         <img src="./assets/stock/milk.png" alt="milk">
-                        <img src="./assets/stock/price.png" alt="price">
-                        <p class="item-name">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
-                        <img src="./assets/icons/rating-milk.png" alt="rating-milk">
-                        <button>В корзину</button>
+                        <div class="item-content">
+                            <img src="./assets/stock/price.png" alt="price">
+                            <div class="item-name">
+                                <span class="card-name">Молоко ПРОСТОКВАШИНО паст.</span>
+                                <span>питьевое цельное отборное...</span>
+                            </div>
+                            <img src="./assets/icons/rating-milk.png" alt="rating-milk">
+                            <button data-cart type="button" class="item-btn">В корзину</button>
+                        </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item" data-id="03">
                         <img src="./assets/stock/boiled-sausage.png" alt="boiled-sausage">
-                        <img src="./assets/stock/price.png" alt="price">
-                        <p class="item-name">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
-                        <img src="./assets/icons/rating-boiled-saus.png" alt="rating-boiled-saus">
-                        <button>В корзину</button>
+                        <div class="item-content">
+                            <img src="./assets/stock/price.png" alt="price">
+                            <div class="item-name">
+                                <span class="card-name__lSpace">Колбаса сырокопченая МЯСНАЯ</span>
+                                <span class="card-name__lwSpace">ИСТОРИЯ Сальчичон и Тоскан...</span>
+                            </div>
+                            <img src="./assets/icons/rating-boiled-saus.png" alt="rating-boiled-saus">
+                            <button data-cart type="button" class="item-btn">В корзину</button>
+                        </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item" data-id="04">
                         <img src="./assets/stock/sausages.png" alt="sausages">
-                        <img src="./assets/stock/price.png" alt="price">
-                        <p class="item-name">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</p>
-                        <img src="./assets/icons/rating-sausages.png" alt="rating-sausages">
-                        <button>В корзину</button>
+                        <div class="item-content">
+                            <img src="./assets/stock/price.png" alt="price">
+                            <div class="item-name">
+                                <span class="card-name__lSpace">Сосиски вареные МЯСНАЯ</span>
+                                <span class="card-name__lwSpace">ИСТОРИЯ Молочные и С сыро...</span>
+                            </div>
+                            <img src="./assets/icons/rating-sausages.png" alt="rating-sausages">
+                            <button data-cart type="button" class="item-btn">В корзину</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="main-item">
-            <div class="title">
-                <h2 class="text">Список покупок</h2>
-                <ul class="card-list">
-                    <li>
+            <div class="card-products__items">
+                <h2 class="card-products__title">Список покупок</h2>
+            </div>
+            <div class="content">
+                <ul class="items card-list ">
+                    <li data-id="02">
                         <article>
                             <p>Молоко Простоквашино...</p>
-                            <button><img src="./assets/icons/icon_%20cross.png"></button>
+                            <button><img src="./assets/icons/icon_%20cross.png" alt="close btn"></button>
                         </article>
                     </li>
                 </ul>
@@ -117,6 +136,7 @@
     </main>
 </div>
 
+<script src="js/tab.js"></script>
 <script src="js/cart.js"></script>
 </body>
 </html>

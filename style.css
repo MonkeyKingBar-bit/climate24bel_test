@@ -1,17 +1,18 @@
 * {
-    font-family: sans-serif;
+    font-size: 1rem;
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust:     100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 body {
+    font-family: 'Rubik', cursive;
+    font-weight: 400;
     overflow-anchor: none;
 }
 .wrapper {
     background-color: #FBF8EC;
-    padding: 0 116px 116px 70px;
     min-height: 100vh;
 }
 .main {
@@ -20,14 +21,77 @@ body {
 }
 .card-products__items {
     display: grid;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 .card-products__btn {
-    grid-column: 12/12;
+    width: 168px;
+    height: 40px;
+    margin: 14px 0 0 0;
+    padding: 8px;
+    grid-column: 11/12;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+}
+.btn-text {
+    flex-grow: 1;
+    color: #606060;
+}
+.card-products__title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 150%;
+    letter-spacing: 2px;
+    color: #414141;
 }
 .content {
     display: grid;
     align-items: center;
+}
+.item {
+    width: 272px;
+    height: 349px;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.item-content {
+    padding: 4px 8px 8px 8px;
+}
+.item-name {
+    padding: 4px 4px 8px 0;
+    letter-spacing: 1px;
+    line-height: 150%;
+    color: #414141;
+}
+.card-name {
+    letter-spacing: 0.025em;
+}
+.card-name__lSpace{
+    letter-spacing: 0.055em;
+}
+.card-name__lwSpace {
+    letter-spacing: 0.01em;
+    word-spacing: 2px;
+}
+.item-btn {
+    width: 256px;
+    height: 40px;
+    margin-top: 4px;
+    border: 1px solid #70C05B;
+    border-radius: 4px;
+    text-align: center;
+    background-color: transparent;
+    color: #70C05B;
+    cursor: pointer;
+}
+.item-btn__text {
+
 }
 .banner-hover {
     grid-column: 1/12;
@@ -57,7 +121,6 @@ body {
     padding: 0;
     border-bottom: 1px solid black;
 }
-
 .tab {
     cursor: pointer;
     padding: 10px;

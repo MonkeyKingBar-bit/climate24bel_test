@@ -1,16 +1,23 @@
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
+const cartList = document.querySelector('.card-list');
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.tabTarget)
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('active')
-        })
-        tabs.forEach(tab => {
-            tab.classList.remove('active')
-        })
-        tab.classList.add('active')
-        target.classList.add('active')
-    })
+window.addEventListener('click', function (event) {
+    if (event.target.hasAttribute('data-cart')) {
+        const card = event.target.closest('.item-content');
+
+        const productInfo = {
+            id: card.dataset.id,
+            title: card.querySelector('.item-name').innerText,
+        };
+
+        console.log(productInfo);
+
+        const cartItemHTML = `<li data-id=${productInfo.id}>
+                                <article>
+                                    <p>${productInfo.title}</p>
+                                    <button><img src="./assets/icons/icon_%20cross.png" alt="close btn"></button>
+                                </article>
+                            </li>`
+
+        cartList.insertAdjacentHTML('beforeend', cartItemHTML);
+    }
 })
