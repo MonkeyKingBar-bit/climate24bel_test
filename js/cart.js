@@ -1,4 +1,4 @@
-const cartList = document.querySelector('.card-list');
+const cartList = document.querySelector('.list-items');
 
 window.addEventListener('click', function (event) {
     if (event.target.hasAttribute('data-cart')) {
@@ -12,9 +12,9 @@ window.addEventListener('click', function (event) {
         console.log(productInfo);
 
         const cartItemHTML = `<li data-id=${productInfo.id}>
-                                <article>
-                                    <p>${productInfo.title}</p>
-                                    <button><img src="./assets/icons/icon_%20cross.png" alt="close btn"></button>
+                                <article class="list-item">
+                                    <p class="list-item__text">${productInfo.title}</p>
+                                    <button class="list-item__btn"><img src="./assets/icons/icon_%20cross.png" alt="close btn"></button>
                                 </article>
                             </li>`
 

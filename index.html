@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <main class="main">
+    <main class="main__container">
         <section class="main-item card-products">
             <div class="card-products__items">
                 <h2 class="card-products__title">Акции</h2>
@@ -22,9 +22,9 @@
 
             <div class="content">
                 <div class="items">
-                    <div class="item" data-id="01">
+                    <div class="item">
                         <img src="./assets/stock/pancakes.png" alt="pancakes">
-                        <div class="item-content">
+                        <div class="item-content" data-id="01">
                             <img src="./assets/stock/price.png" alt="price">
                             <p class="item-name">Г/Ц Блинчики с мясом вес, Россия</p>
                             <img src="./assets/icons/rating.png" alt="rating">
@@ -32,9 +32,9 @@
                         </div>
                     </div>
 
-                    <div class="item" data-id="02">
+                    <div class="item">
                         <img src="./assets/stock/milk.png" alt="milk">
-                        <div class="item-content">
+                        <div class="item-content" data-id="02">
                             <img src="./assets/stock/price.png" alt="price">
                             <div class="item-name">
                                 <span class="card-name">Молоко ПРОСТОКВАШИНО паст.</span>
@@ -45,26 +45,26 @@
                         </div>
                     </div>
 
-                    <div class="item" data-id="03">
+                    <div class="item">
                         <img src="./assets/stock/boiled-sausage.png" alt="boiled-sausage">
-                        <div class="item-content">
+                        <div class="item-content" data-id="03">
                             <img src="./assets/stock/price.png" alt="price">
                             <div class="item-name">
                                 <span class="card-name__lSpace">Колбаса сырокопченая МЯСНАЯ</span>
-                                <span class="card-name__lwSpace">ИСТОРИЯ Сальчичон и Тоскан...</span>
+                                <span class="card-name">ИСТОРИЯ Сальчичон и Тоскан...</span>
                             </div>
                             <img src="./assets/icons/rating-boiled-saus.png" alt="rating-boiled-saus">
                             <button data-cart type="button" class="item-btn">В корзину</button>
                         </div>
                     </div>
 
-                    <div class="item" data-id="04">
+                    <div class="item">
                         <img src="./assets/stock/sausages.png" alt="sausages">
-                        <div class="item-content">
+                        <div class="item-content" data-id="04">
                             <img src="./assets/stock/price.png" alt="price">
                             <div class="item-name">
                                 <span class="card-name__lSpace">Сосиски вареные МЯСНАЯ</span>
-                                <span class="card-name__lwSpace">ИСТОРИЯ Молочные и С сыро...</span>
+                                <span class="card-name">ИСТОРИЯ Молочные и С сыро...</span>
                             </div>
                             <img src="./assets/icons/rating-sausages.png" alt="rating-sausages">
                             <button data-cart type="button" class="item-btn">В корзину</button>
@@ -74,29 +74,37 @@
             </div>
         </section>
 
-        <section class="main-item">
+        <section class="main-item card-products">
             <div class="card-products__items">
-                <h2 class="card-products__title">Список покупок</h2>
+                <h2 class="card-products__title title_lSpace">Список покупок:</h2>
             </div>
-            <div class="content">
-                <ul class="items card-list ">
+            <div class="card-products__list content">
+                <ul class="list-items items">
                     <li data-id="02">
-                        <article>
-                            <p>Молоко Простоквашино...</p>
-                            <button><img src="./assets/icons/icon_%20cross.png" alt="close btn"></button>
+                        <article class="list-item">
+                            <p class="list-item__text">Молоко Простоквашино...</p>
+                            <button class="list-item__btn"><img class="btn-img" src="./assets/icons/icon_%20cross.png" alt="close btn"></button>
+                        </article>
+                    </li>
+                    <li data-id="02">
+                        <article class="list-item">
+                            <p class="list-item__text">Молоко Простоквашино...</p>
+                            <button class="list-item__btn"><img class="btn-img" src="./assets/icons/icon_%20cross.png" alt="close btn"></button>
                         </article>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="main-item">
-            <div class="title">
-                <h2 class="text">Специальные предложения</h2>
+        <section class="main-item card-products">
+            <div class="card-products__items">
+                <h2 class="card-products__title_lSpace">Специальные предложения</h2>
             </div>
             <div class="content">
-                <img class="banner-hover" src="./assets/stock/banner-hover.png" alt="banner-hover">
-                <img class="banner" src="./assets/stock/banner.png" alt="banner">
+                <div class="card-products__spec">
+                    <img class="banner-hover" src="./assets/stock/banner-hover.png" alt="banner-hover">
+                    <img class="banner" src="./assets/stock/banner.png" alt="banner">
+                </div>
             </div>
         </section>
 
